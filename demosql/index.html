@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>SQL Injection Prevention</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css"> 
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+
+
+   </head>
+   <body class="size-960">
+      <!-- HEADER -->
+      <header>
+
+         <div class="line">
+           
+               <div class="s-12 l-2">
+                  <img class="s-5 l-12 center" src="img/sql5.gif">
+               </div>
+
+           <br>
+           <br>
+            <h3> <b>  PREVENTING SQL INJECTION ATTACK USING PATTERN MATCHING AND MACHINE LEARNING</b></h3>
+         </div>
+         <!-- TOP NAV -->  
+         <div class="line">
+            <nav class="margin-bottom">
+               <p class="nav-text">Custom menu text</p>
+               <div class="top-nav s-12 l-10">
+                  <ul>
+                     <li><a>Home</a></li>
+                     <li>
+                        <a href="#pro">Project</a>
+                        
+                           </li>
+                        </ul>
+                     </li>
+                     
+                     <li><a href="#con">Contact</a></li>
+                     <li><a href="sqldemo.php">sqldemo</li>
+                  </ul>
+                  
+       
+    
+        <li><a href="login.php">Logout</a></li>
+  
+               </div>
+               
+            </nav>
+         </div>
+      </header>
+      <section>
+         <!-- CAROUSEL -->  
+         <div class="line">
+            <div id="header-carousel" class="owl-carousel owl-theme margin-bottom">
+               <div class="item"><img src="img/sql1.png" alt=""></div>
+               <div class="item"><img src="img/sql4.png" alt=""></div>
+               <div class="item"><img src="img/flowchart.png" alt=""></div>
+            </div>
+         </div>
+        
+         <!-- ASIDE NAV AND CONTENT -->
+         <div class="line">
+            <div class="box margin-bottom">
+               <div class="margin">
+                  <!-- CONTENT -->
+                  <article class="s-12 m-7 l-8">
+                     <h1 id="pro">PROJECT</h1>
+                     <h3>Introduction to SQL Injection</h3>
+
+                     <p><li> The ability to inject SQL commands into the database engine through an existing application.</li>
+<li>It is an attack on web-based applications that connect to database back-ends in which the attacker executes unauthorized (and unexpected) SQL commands by taking advantage of insecure code and bad input validation. </li>
+<li>SQL injection attacks can be used to steal information from a database from which the data would normally not be available and to gain access to host computers through the database engine. </li>
+<li>SQL injection is a type of security exploit in which the attacker adds SQL statements through a web application's input fields or hidden parameters to gain access to resources or make changes to data.</li>
+<li>It's a serious vulnerability, which can lead to a high level of compromise - usually the ability to run any database query.</li>
+<li>In the last few months application-level vulnerabilities have been exploited with serious consequences by the hackers have tricked  the e-commerce sites into shipping goods for no charge, usernames and passwords have been harvested and confidential information such asaddresses and credit-card numbers has been leaked.</li> 
+                     </p>
+                     <h2>Types of SQL Injection Attacks</h2>
+                     <p>
+                                             Types of SQL injection queries
+
+<ul>
+  <li>  Tautologies</li>
+
+  <li>  Piggy-backed query</li>
+
+  <li>  Union query</li>
+
+  <li>  Stored procedures</li>
+
+   <li> Illegal/logically incorrect queries</li>
+ </ul>
+
+
+                     </p>
+                  </article>
+                 
+                 
+               </div>
+            </div>
+         </div>
+         
+         
+      </section>
+      <!-- FOOTER -->
+      <footer class="line">
+         <div class="box">
+            <div class="s-12 l-6">
+               
+            </div>
+            <h3>
+            CONTACT</h3>
+            <li>Pradeep</li>
+            <li>Subash</li>
+            <li>Surendiran</li>
+            
+             <p id="con">  Design and coding by Batch @16
+             </p>
+            
+         </div>
+      </footer>                                                                   
+      <script type="text/javascript" src="js/responsee.js"></script>               
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      
+      <script type="text/javascript">
+        jQuery(document).ready(function($) {
+          var owl = $('#header-carousel');
+          owl.owlCarousel({
+            nav: true,
+            dots: true,
+            items: 1,
+            loop: true,
+            navText: ["&#xf007","&#xf006"],
+            autoplay: true,
+            autoplayTimeout: 3000
+          });
+          var owl = $('#gallery-carousel');
+          owl.owlCarousel({
+            nav: false,
+            dots: true,
+            loop: true,
+            navText: ["&#xf007","&#xf006"],
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+              0: {
+                items: 1
+              },
+              769: {
+                items: 2
+              },
+              960: {
+                items: 4
+              }
+            }
+          });
+        })
+      </script>
+      
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBKweogHYrJyo03VnPoyANCLQvvpMQxcyM",
+    authDomain: "website-194a5.firebaseapp.com",
+    databaseURL: "https://website-194a5.firebaseio.com",
+    projectId: "website-194a5",
+    storageBucket: "website-194a5.appspot.com",
+    messagingSenderId: "551563150733"
+  };
+  firebase.initializeApp(config);
+</script>
+   </body>
+</html>
